@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Sistema Hospitalar</title>
+    <link rel="stylesheet" href="sistema-hospitalar.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <!-- Formulário de login -->
+      <div class="left">
+        <h2>Login</h2>
+        <p>Acesse o sistema hospitalar</p>
+        <form onsubmit="return validarLogin()">
+          <!-- Seleção de tipo de usuário -->
+          <select id="tipoUsuario" required>
+            <option value="">Selecione o tipo de usuário</option>
+            <option value="medico">Médico</option>
+            <option value="enfermeiro">Enfermeiro</option>
+            <option value="recepcao">Recepção</option>
+          </select>
+
+          <!-- Campos de login -->
+          <input type="text" id="credencial" placeholder="ID, CRM ou COREN" required />
+          <input type="password" id="senha" placeholder="Senha" required />
+
+          <div class="forgot">
+            <a href="#" onclick="esqueceuSenha()">Esqueceu a senha?</a>
+          </div>
+
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+
+      <!-- Lado direito com imagem -->
+      <div class="right">
+        <img src="https://img.freepik.com/vetores-gratis/medico-injetando-vacina-em-um-paciente_23-2148860726.jpg?semt=ais_hybrid&w=740" alt="Ilustração Hospitalar">
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
+
